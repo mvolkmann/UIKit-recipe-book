@@ -62,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="-972" y="-363"/>
         </scene>
-        <!--Recipe List Screen-->
+        <!--Mark's Favorite Recipes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RecipeListScreen" customModule="recipe_book" customModuleProvider="target" sceneMemberID="viewController">
@@ -102,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-detail-stack-view">
-                                <rect key="frame" x="20" y="127" width="353" height="111.33333333333331"/>
+                                <rect key="frame" x="20" y="142" width="353" height="93"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-description-label">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
@@ -115,7 +115,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-ingredients-label">
-                                        <rect key="frame" x="0.0" y="72.666666666666686" width="353" height="38.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="72.666666666666657" width="353" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -134,7 +134,6 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="recipe-description-label" id="recipe-description-label-outlet"/>
                         <outlet property="ingredientsLabel" destination="recipe-ingredients-label" id="recipe-ingredients-label-outlet"/>
-                        <outlet property="ingredientsTitleLabel" destination="recipe-ingredients-title-label" id="recipe-ingredients-title-label-outlet"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="recipe-detail-first-responder" sceneMemberID="firstResponder"/>

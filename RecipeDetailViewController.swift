@@ -2,7 +2,6 @@ import UIKit
 
 class RecipeDetailViewController: UIViewController {
     @IBOutlet private var descriptionLabel: UILabel!
-    @IBOutlet private var ingredientsTitleLabel: UILabel!
     @IBOutlet private var ingredientsLabel: UILabel!
 
     private var recipe: Recipe?
@@ -18,7 +17,6 @@ class RecipeDetailViewController: UIViewController {
 
         title = recipe.name
         descriptionLabel.text = recipe.description
-        ingredientsTitleLabel.text = "Ingredients"
         ingredientsLabel.text = recipe.ingredients.map { "• \($0)" }
             .joined(separator: "\n")
     }
