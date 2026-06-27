@@ -8,6 +8,8 @@ class RecipeDetailViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
+    // Because the superclass UIViewController has a required init?(coder:),
+    // this subclass must defined it.
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -18,10 +20,7 @@ class RecipeDetailViewController: UIViewController {
 
         title = recipe.name
         view.backgroundColor = .systemBackground
-        configureLayout()
-    }
 
-    private func configureLayout() {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 16
