@@ -67,11 +67,15 @@ class RecipeListScreen: UIViewController {
         )
     ]
 
+    // Called after the view controller loads its view hierarchy; sets up the
+    // table view.
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.dataSource = self
         tableView.delegate = self
+        // Register the default cell class so dequeueReusableCell
+        // can create cells for this identifier.
         tableView.register(
             UITableViewCell.self,
             forCellReuseIdentifier: "RecipeCell"
@@ -80,6 +84,8 @@ class RecipeListScreen: UIViewController {
 }
 
 extension RecipeListScreen: UITableViewDataSource {
+    // This is called by the table view when it
+    // needs to know how many rows to display.
     func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
@@ -87,6 +93,8 @@ extension RecipeListScreen: UITableViewDataSource {
         recipes.count
     }
 
+    // This is called by the table view when a row is about to appear.
+    // It creates and configures a cell for that row.
     func tableView(
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
@@ -109,6 +117,8 @@ extension RecipeListScreen: UITableViewDataSource {
 }
 
 extension RecipeListScreen: UITableViewDelegate {
+    // This is called by the table view after the user taps a row.
+    // It opens the selected recipe's detail screen.
     func tableView(
         _ tableView: UITableView,
         didSelectRowAt indexPath: IndexPath
