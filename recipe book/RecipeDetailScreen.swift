@@ -4,7 +4,7 @@ class RecipeDetailScreen: UIViewController {
     @IBOutlet private var descriptionLabel: UILabel!
     @IBOutlet private var ingredientsLabel: UILabel!
 
-    private var recipe: Recipe?
+    private var recipe: Recipe!
 
     func configure(with recipe: Recipe) {
         self.recipe = recipe
@@ -12,8 +12,6 @@ class RecipeDetailScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        guard let recipe else { return }
 
         title = recipe.name
         descriptionLabel.text = recipe.description
