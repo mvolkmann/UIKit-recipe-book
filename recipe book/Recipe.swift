@@ -13,6 +13,7 @@ struct Recipe {
 
     let name: String
     let description: String
+    let imageName: String
     let ingredients: [Ingredient]
     let steps: [String]
 }

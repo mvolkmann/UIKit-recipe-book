@@ -2,6 +2,7 @@ import UIKit
 
 class RecipeDetailScreen: UIViewController {
     @IBOutlet private var descriptionLabel: UILabel!
+    @IBOutlet private var recipeImageView: UIImageView!
     @IBOutlet private var ingredientsLabel: UILabel!
     @IBOutlet private var stepsLabel: UILabel!
 
@@ -17,6 +18,8 @@ class RecipeDetailScreen: UIViewController {
         title = recipe.name // the view title
 
         descriptionLabel.text = recipe.description
+        recipeImageView.image = UIImage(named: recipe.imageName)
+        recipeImageView.accessibilityLabel = recipe.name
 
         // This uses a single UILabelView to display all the ingredients
         // by separating them with newline characters.

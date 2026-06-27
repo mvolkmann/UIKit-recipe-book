@@ -7,6 +7,7 @@ enum RecipeData {
         Recipe(
             name: "Classic Spaghetti Carbonara",
             description: "A rich pasta dish with eggs, cheese, pancetta, and black pepper.",
+            imageName: "spaghetti-carbonara",
             ingredients: [
                 .init(name: "Spaghetti", amount: "12", unit: "oz"),
                 .init(name: "Eggs", amount: "3", unit: "large"),
@@ -25,6 +26,7 @@ enum RecipeData {
         Recipe(
             name: "Chicken Tikka Masala",
             description: "Tender chicken in a creamy, spiced tomato sauce.",
+            imageName: "chicken-tikka-masala",
             ingredients: [
                 .init(name: "Chicken", amount: "1.5", unit: "lb"),
                 .init(name: "Yogurt", amount: "1", unit: "cup"),
@@ -43,6 +45,7 @@ enum RecipeData {
         Recipe(
             name: "Beef Tacos",
             description: "Seasoned beef served in tortillas with fresh toppings.",
+            imageName: "beef-tacos",
             ingredients: [
                 .init(name: "Ground beef", amount: "1", unit: "lb"),
                 .init(name: "Tortillas", amount: "8", unit: "small"),
@@ -61,6 +64,7 @@ enum RecipeData {
         Recipe(
             name: "Margherita Pizza",
             description: "A simple pizza topped with tomato, mozzarella, and basil.",
+            imageName: "margherita-pizza",
             ingredients: [
                 .init(name: "Pizza dough", amount: "1", unit: "lb"),
                 .init(name: "Tomato sauce", amount: "1/2", unit: "cup"),
@@ -79,6 +83,7 @@ enum RecipeData {
         Recipe(
             name: "Chocolate Chip Cookies",
             description: "Soft, chewy cookies loaded with chocolate chips.",
+            imageName: "chocolate-chip-cookies",
             ingredients: [
                 .init(name: "Flour", amount: "2 1/4", unit: "cups"),
                 .init(name: "Butter", amount: "1", unit: "cup"),

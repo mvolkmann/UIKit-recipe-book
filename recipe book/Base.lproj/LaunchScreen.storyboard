@@ -21,23 +21,13 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaghettiPlate" translatesAutoresizingMaskIntoConstraints="NO" id="spaghetti-image">
-                                <rect key="frame" x="32" y="263.66666666666669" width="329" height="219.33333333333331"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" secondItem="spaghetti-image" secondAttribute="width" multiplier="2:3" id="image-aspect-ratio"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="spaghetti-image" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="image-center-x"/>
-                            <constraint firstItem="spaghetti-image" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="image-leading"/>
-                            <constraint firstItem="spaghetti-image" firstAttribute="top" secondItem="title-label" secondAttribute="bottom" constant="32" id="image-top"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="spaghetti-image" secondAttribute="trailing" constant="32" id="image-trailing"/>
                             <constraint firstItem="title-label" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="title-center-x"/>
                             <constraint firstItem="title-label" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="title-leading"/>
-                            <constraint firstItem="title-label" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="title-top"/>
+                            <constraint firstItem="title-label" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="title-center-y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="title-label" secondAttribute="trailing" constant="32" id="title-trailing"/>
                         </constraints>
                     </view>
@@ -48,7 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SpaghettiPlate" width="5184" height="3456"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
