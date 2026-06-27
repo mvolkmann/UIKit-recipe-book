@@ -14,4 +14,5 @@ struct Recipe {
     let name: String
     let description: String
     let ingredients: [Ingredient]
+    let steps: [String]
 }
