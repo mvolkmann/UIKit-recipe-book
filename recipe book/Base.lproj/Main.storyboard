@@ -93,6 +93,54 @@
             </objects>
             <point key="canvasLocation" x="-115" y="-363"/>
         </scene>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="recipe-detail-scene">
+            <objects>
+                <viewController storyboardIdentifier="RecipeDetailViewController" id="recipe-detail-view-controller" customClass="RecipeDetailViewController" customModule="recipe_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="recipe-detail-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-detail-stack-view">
+                                <rect key="frame" x="20" y="127" width="353" height="111.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-description-label">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-ingredients-title-label">
+                                        <rect key="frame" x="0.0" y="36.333333333333343" width="353" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-ingredients-label">
+                                        <rect key="frame" x="0.0" y="72.666666666666686" width="353" height="38.666666666666657"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="recipe-detail-safe-area"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="recipe-detail-stack-view" firstAttribute="leading" secondItem="recipe-detail-safe-area" secondAttribute="leading" constant="20" id="recipe-detail-stack-leading"/>
+                            <constraint firstItem="recipe-detail-stack-view" firstAttribute="top" secondItem="recipe-detail-safe-area" secondAttribute="top" constant="24" id="recipe-detail-stack-top"/>
+                            <constraint firstItem="recipe-detail-safe-area" firstAttribute="trailing" secondItem="recipe-detail-stack-view" secondAttribute="trailing" constant="20" id="recipe-detail-stack-trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="recipe-detail-navigation-item"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="recipe-description-label" id="recipe-description-label-outlet"/>
+                        <outlet property="ingredientsLabel" destination="recipe-ingredients-label" id="recipe-ingredients-label-outlet"/>
+                        <outlet property="ingredientsTitleLabel" destination="recipe-ingredients-title-label" id="recipe-ingredients-title-label-outlet"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="recipe-detail-first-responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="-363"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SpaghettiPlate" width="5184" height="3456"/>
