@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1AC2F4E02FF030C500EFAC10 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2F4DF2FF030C500EFAC10 /* RecipeDetailViewController.swift */; };
-		1AC2F4E22FF032FF00EFAC10 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2F4E12FF032FF00EFAC10 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1AC2F4C72FF0304A00EFAC10 /* recipe book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recipe book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC2F4DF2FF030C500EFAC10 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
-		1AC2F4E12FF032FF00EFAC10 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -55,7 +53,6 @@
 				1AC2F4C92FF0304A00EFAC10 /* recipe book */,
 				1AC2F4C82FF0304A00EFAC10 /* Products */,
 				1AC2F4DF2FF030C500EFAC10 /* RecipeDetailViewController.swift */,
-				1AC2F4E12FF032FF00EFAC10 /* SplashViewController.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC2F4E02FF030C500EFAC10 /* RecipeDetailViewController.swift in Sources */,
-				1AC2F4E22FF032FF00EFAC10 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

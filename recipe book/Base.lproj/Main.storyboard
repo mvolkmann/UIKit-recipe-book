@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Splash View Controller-->
+        <!--Splash Screen-->
         <scene sceneID="splash-scene">
             <objects>
-                <viewController storyboardIdentifier="SplashViewController" id="splash-view-controller" customClass="SplashViewController" customModule="recipe_book" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashViewController" id="splash-view-controller" userLabel="Splash Screen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="splash-view">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="splash-stack-view">
-                                <rect key="frame" x="32" y="272" width="329" height="333"/>
+                                <rect key="frame" x="32" y="284.66666666666669" width="329" height="333.00000000000006"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark's Favorite Recipes" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="splash-title-label">
                                         <rect key="frame" x="0.0" y="0.0" width="329" height="81.666666666666671"/>
@@ -25,7 +25,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaghettiPlate" translatesAutoresizingMaskIntoConstraints="NO" id="splash-image-view">
-                                        <rect key="frame" x="0.0" y="113.6666666666667" width="329" height="219.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="113.66666666666664" width="329" height="219.33333333333337"/>
                                         <constraints>
                                             <constraint firstAttribute="height" secondItem="splash-image-view" secondAttribute="width" multiplier="2:3" id="splash-image-aspect"/>
                                         </constraints>
@@ -36,15 +36,11 @@
                         <viewLayoutGuide key="safeArea" id="splash-safe-area"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="splash-stack-view" firstAttribute="leading" secondItem="splash-safe-area" secondAttribute="leading" constant="32" id="splash-stack-leading"/>
                             <constraint firstItem="splash-stack-view" firstAttribute="centerY" secondItem="splash-safe-area" secondAttribute="centerY" id="splash-stack-center-y"/>
+                            <constraint firstItem="splash-stack-view" firstAttribute="leading" secondItem="splash-safe-area" secondAttribute="leading" constant="32" id="splash-stack-leading"/>
                             <constraint firstItem="splash-safe-area" firstAttribute="trailing" secondItem="splash-stack-view" secondAttribute="trailing" constant="32" id="splash-stack-trailing"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="imageView" destination="splash-image-view" id="splash-image-outlet"/>
-                        <outlet property="titleLabel" destination="splash-title-label" id="splash-title-outlet"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="splash-first-responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,10 +78,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="recipe-list-table-view" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="recipe-list-table-top"/>
-                            <constraint firstItem="recipe-list-table-view" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="recipe-list-table-leading"/>
-                            <constraint firstAttribute="trailing" secondItem="recipe-list-table-view" secondAttribute="trailing" id="recipe-list-table-trailing"/>
                             <constraint firstAttribute="bottom" secondItem="recipe-list-table-view" secondAttribute="bottom" id="recipe-list-table-bottom"/>
+                            <constraint firstItem="recipe-list-table-view" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="recipe-list-table-leading"/>
+                            <constraint firstItem="recipe-list-table-view" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="recipe-list-table-top"/>
+                            <constraint firstAttribute="trailing" secondItem="recipe-list-table-view" secondAttribute="trailing" id="recipe-list-table-trailing"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="recipe-list-navigation-item"/>
