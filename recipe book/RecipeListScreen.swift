@@ -70,12 +70,6 @@ class RecipeListScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Mark's Favorite Recipes"
-        view.backgroundColor = .systemBackground
-        configureTableView()
-    }
-
-    private func configureTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(

@@ -84,7 +84,7 @@
                             <constraint firstAttribute="trailing" secondItem="recipe-list-table-view" secondAttribute="trailing" id="recipe-list-table-trailing"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="recipe-list-navigation-item"/>
+                    <navigationItem key="navigationItem" title="Mark's Favorite Recipes" id="recipe-list-navigation-item"/>
                     <connections>
                         <outlet property="tableView" destination="recipe-list-table-view" id="recipe-list-table-view-outlet"/>
                     </connections>
