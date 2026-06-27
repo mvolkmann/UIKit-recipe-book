@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="-115" y="-363"/>
         </scene>
-        <!--Recipe Detail View Controller-->
+        <!--Recipe Detail Screen-->
         <scene sceneID="recipe-detail-scene">
             <objects>
                 <viewController storyboardIdentifier="RecipeDetailScreen" id="recipe-detail-view-controller" customClass="RecipeDetailScreen" customModule="recipe_book" customModuleProvider="target" sceneMemberID="viewController">
@@ -102,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-detail-stack-view">
-                                <rect key="frame" x="20" y="142" width="353" height="93"/>
+                                <rect key="frame" x="20" y="138" width="353" height="93"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="recipe-description-label">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
@@ -126,7 +126,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="recipe-detail-stack-view" firstAttribute="leading" secondItem="recipe-detail-safe-area" secondAttribute="leading" constant="20" id="recipe-detail-stack-leading"/>
-                            <constraint firstItem="recipe-detail-stack-view" firstAttribute="top" secondItem="recipe-detail-safe-area" secondAttribute="top" constant="24" id="recipe-detail-stack-top"/>
+                            <constraint firstItem="recipe-detail-stack-view" firstAttribute="top" secondItem="recipe-detail-safe-area" secondAttribute="top" constant="20" id="recipe-detail-stack-top"/>
                             <constraint firstItem="recipe-detail-safe-area" firstAttribute="trailing" secondItem="recipe-detail-stack-view" secondAttribute="trailing" constant="20" id="recipe-detail-stack-trailing"/>
                         </constraints>
                     </view>
