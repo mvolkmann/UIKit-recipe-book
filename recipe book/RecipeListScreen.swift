@@ -1,74 +1,12 @@
 import UIKit
 
-struct Recipe {
-    let name: String
-    let description: String
-    let ingredients: [String]
-}
-
 class RecipeListScreen: UIViewController {
     @IBOutlet private var tableView: UITableView!
 
-    private let recipes = [
-        Recipe(
-            name: "Classic Spaghetti Carbonara",
-            description: "A rich pasta dish with eggs, cheese, pancetta, and black pepper.",
-            ingredients: [
-                "Spaghetti",
-                "Eggs",
-                "Parmesan cheese",
-                "Pancetta",
-                "Black pepper"
-            ]
-        ),
-        Recipe(
-            name: "Chicken Tikka Masala",
-            description: "Tender chicken in a creamy, spiced tomato sauce.",
-            ingredients: [
-                "Chicken",
-                "Yogurt",
-                "Tomato sauce",
-                "Garam masala",
-                "Cream"
-            ]
-        ),
-        Recipe(
-            name: "Beef Tacos",
-            description: "Seasoned beef served in tortillas with fresh toppings.",
-            ingredients: [
-                "Ground beef",
-                "Tortillas",
-                "Lettuce",
-                "Cheddar cheese",
-                "Salsa"
-            ]
-        ),
-        Recipe(
-            name: "Margherita Pizza",
-            description: "A simple pizza topped with tomato, mozzarella, and basil.",
-            ingredients: [
-                "Pizza dough",
-                "Tomato sauce",
-                "Mozzarella",
-                "Fresh basil",
-                "Olive oil"
-            ]
-        ),
-        Recipe(
-            name: "Chocolate Chip Cookies",
-            description: "Soft, chewy cookies loaded with chocolate chips.",
-            ingredients: [
-                "Flour",
-                "Butter",
-                "Brown sugar",
-                "Eggs",
-                "Chocolate chips"
-            ]
-        )
-    ]
+    private let recipes = RecipeData.recipes
 
-    // Called after the view controller loads its view hierarchy; sets up the
-    // table view.
+    // This is called after the view controller loads its view hierarchy.
+    // It configures the table view.
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -84,7 +22,7 @@ class RecipeListScreen: UIViewController {
 }
 
 extension RecipeListScreen: UITableViewDataSource {
-    // This is called by the table view when it
+    // This is called when the table view
     // needs to know how many rows to display.
     func tableView(
         _ tableView: UITableView,
@@ -93,7 +31,7 @@ extension RecipeListScreen: UITableViewDataSource {
         recipes.count
     }
 
-    // This is called by the table view when a row is about to appear.
+    // This is called when a row is about to appear.
     // It creates and configures a cell for that row.
     func tableView(
         _ tableView: UITableView,
@@ -117,7 +55,7 @@ extension RecipeListScreen: UITableViewDataSource {
 }
 
 extension RecipeListScreen: UITableViewDelegate {
-    // This is called by the table view after the user taps a row.
+    // This is called when the user taps a row.
     // It opens the selected recipe's detail screen.
     func tableView(
         _ tableView: UITableView,
