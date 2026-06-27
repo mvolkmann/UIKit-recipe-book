@@ -1,5 +1,7 @@
 import Foundation
 
+// enum is used here as a namespace
+// so the recipes array doesn't need to be global.
 enum RecipeData {
     static let recipes = [
         Recipe(
