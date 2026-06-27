@@ -41,13 +41,17 @@ extension RecipeListScreen: UITableViewDataSource {
             withIdentifier: "RecipeCell",
             for: indexPath
         )
-        let recipe = recipes[indexPath.row]
 
         var content = cell.defaultContentConfiguration()
+        let recipe = recipes[indexPath.row]
         content.text = recipe.name
         content.secondaryText = recipe.description
         content.secondaryTextProperties.numberOfLines = 2
+
         cell.contentConfiguration = content
+
+        // This adds a right chevron to the end of the cell that
+        // indicates to users that clicking it will display more data.
         cell.accessoryType = .disclosureIndicator
 
         return cell
