@@ -19,7 +19,7 @@ class RecipeDetailScreen: UIViewController {
 
         // This uses a single UILabelView to display all the ingredients
         // by separating them with newline characters.
-        ingredientsLabel.text = recipe.ingredients.map { "• \($0)" }
+        ingredientsLabel.text = recipe.ingredients.map { "• \($0.displayText)" }
             .joined(separator: "\n")
     }
 }
