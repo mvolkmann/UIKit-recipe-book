@@ -1,8 +1,3 @@
-//  AppDelegate.swift
-//  recipe book
-//
-//  Created by Mark Volkmann on 6/27/26.
-
 import UIKit
 
 // It's not clear to me why I need to define this class,

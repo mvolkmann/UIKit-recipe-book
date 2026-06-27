@@ -1,8 +1,3 @@
-//  RecipeListScreen.swift
-//  recipe book
-//
-//  Created by Mark Volkmann on 6/27/26.
-
 import UIKit
 
 struct Recipe {
@@ -12,7 +7,7 @@ struct Recipe {
 }
 
 class RecipeListScreen: UIViewController {
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private var tableView: UITableView!
 
     private let recipes = [
         Recipe(

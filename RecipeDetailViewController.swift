@@ -1,8 +1,3 @@
-//  RecipeDetailViewController.swift
-//  recipe book
-//
-//  Created by Mark Volkmann on 6/27/26.
-
 import UIKit
 
 class RecipeDetailViewController: UIViewController {
