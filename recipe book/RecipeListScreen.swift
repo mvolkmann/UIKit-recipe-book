@@ -67,14 +67,11 @@ extension RecipeListScreen: UITableViewDelegate {
     ) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        guard let detailViewController = storyboard?.instantiateViewController(
+        guard let detailVC = storyboard?.instantiateViewController(
             withIdentifier: "RecipeDetailScreen"
         ) as? RecipeDetailScreen else { return }
 
-        detailViewController.configure(with: recipes[indexPath.row])
-        navigationController?.pushViewController(
-            detailViewController,
-            animated: true
-        )
+        detailVC.configure(with: recipes[indexPath.row])
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

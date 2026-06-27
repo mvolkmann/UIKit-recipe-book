@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // After two seconds, display the main screen.
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak window] in
             guard let window,
-                  let mainViewController = storyboard
+                  let mainVC = storyboard
                   .instantiateInitialViewController()
             else { return }
 
@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 duration: 0.25,
                 options: .transitionCrossDissolve
             ) {
-                window.rootViewController = mainViewController
+                window.rootViewController = mainVC
             }
         }
     }

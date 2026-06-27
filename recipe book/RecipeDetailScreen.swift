@@ -13,7 +13,7 @@ class RecipeDetailScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = recipe.name
+        title = recipe.name // the view title
         descriptionLabel.text = recipe.description
         ingredientsLabel.text = recipe.ingredients.map { "• \($0)" }
             .joined(separator: "\n")
