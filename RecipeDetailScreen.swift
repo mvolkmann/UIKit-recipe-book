@@ -1,6 +1,6 @@
 import UIKit
 
-class RecipeDetailViewController: UIViewController {
+class RecipeDetailScreen: UIViewController {
     @IBOutlet private var descriptionLabel: UILabel!
     @IBOutlet private var ingredientsLabel: UILabel!
 

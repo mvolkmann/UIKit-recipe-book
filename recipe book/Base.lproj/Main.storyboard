@@ -96,7 +96,7 @@
         <!--Recipe Detail View Controller-->
         <scene sceneID="recipe-detail-scene">
             <objects>
-                <viewController storyboardIdentifier="RecipeDetailViewController" id="recipe-detail-view-controller" customClass="RecipeDetailViewController" customModule="recipe_book" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeDetailScreen" id="recipe-detail-view-controller" customClass="RecipeDetailScreen" customModule="recipe_book" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="recipe-detail-view">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
